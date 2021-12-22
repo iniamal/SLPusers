@@ -16,7 +16,7 @@ import {
 
 const router = express.Router()
 
-router.get('/find:id', auth, getProfile)     
-router.get('/:id', auth, updateProfile )
+router.get('/:id', auth, getProfile)     
+router.put('/:id', auth, updateProfile )
 
 export default router
